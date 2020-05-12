@@ -12,3 +12,4 @@ def _exec_notebook(path):
 
 def test():
     _exec_notebook('example.ipynb')
+    _exec_notebook('unittest.ipynb')
