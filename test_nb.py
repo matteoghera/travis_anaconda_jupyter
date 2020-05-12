@@ -10,6 +10,8 @@ def _exec_notebook(path):
         subprocess.check_call(args)
 
 
-def test():
+def test_example():
     _exec_notebook('example.ipynb')
+    
+def test_unitest():
     _exec_notebook('unittest.ipynb')
