@@ -1,9 +1,7 @@
 language: python
 python:
   - "3.5"
-cache:
-  directories:
-  - $HOME/.m2
+
 install:
   - sudo apt-get update
   # We do this conditionally because it saves us some downloading if the
@@ -24,5 +22,9 @@ install:
   - conda env create -n test-environment python=$TRAVIS_PYTHON_VERSION -f environment.yml
   - source activate test-environment
 
+cache:
+  directories:
+  - $HOME/.m2
+  
 script:
   - py.test
